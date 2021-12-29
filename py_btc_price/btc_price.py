@@ -9,7 +9,7 @@ def get_btc_price(currency='USD'):
     return None
     
 
-def btc_convert(amount):
+def usd_convert(amount):
     try:
         current_price = get_btc_price('USD')
         
@@ -19,3 +19,7 @@ def btc_convert(amount):
     except Exception as err:
         
         return None
+    
+
+def satoshi_convert(satoshi):
+    return 0
