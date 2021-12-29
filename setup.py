@@ -1,15 +1,22 @@
 from distutils.core import setup
 
+from pathlib import Path
+
+this_directory = Path(__file__).parent
+long_description = (this_directory / "README.md").read_text()
+
 setup(
     name = 'py_btc_price',
     packages = ['py_btc_price'],
-    version = '0.1',
+    version = '0.2',
     license='MIT',
     description = 'Get the current Bitcoin Price or Convert the fiat USD equivalente to BTC.',
     author = 'Eduardo Ismael García Pérez',
+    long_description=long_description,
+    long_description_content_type='text/markdown',
     author_email = 'eduardo78d@gmail.com',
     url = 'https://github.com/eduardogpg/py_btc_price',
-    download_url = 'https://github.com/eduardogpg/py_btc_price/archive/refs/tags/0.1.tar.gz',
+    download_url = 'https://github.com/eduardogpg/py_btc_price/archive/refs/tags/0.2.tar.gz',
     keywords = ['Criptocurrency', 'BTC', 'Bitcoin Price', 'BTC price'],
     install_requires=[ 
         'requests',
