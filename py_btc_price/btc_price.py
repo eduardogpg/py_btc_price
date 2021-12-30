@@ -19,7 +19,3 @@ def usd_convert(amount):
     except Exception as err:
         
         return None
-    
-
-def satoshi_convert(satoshi):
-    return 0

@@ -5,8 +5,8 @@ from pathlib import Path
 this_directory = Path(__file__).parent
 long_description = (this_directory / "README.md").read_text()
 
-VERSION = '0.3'
-DESCRIPTION = ''
+VERSION = '0.5'
+DESCRIPTION = 'Get the current Bitcoin Price or Convert the fiat USD equivalente to BTC.'
 
 setup(
     name = 'py_btc_price',
@@ -19,7 +19,6 @@ setup(
     author = 'Eduardo Ismael García Pérez',
     author_email = 'eduardo78d@gmail.com',
     url = 'https://github.com/eduardogpg/py_btc_price',
-    download_url = 'https://github.com/eduardogpg/py_btc_price/archive/refs/tags/0.3.tar.gz',
     keywords = ['Criptocurrency', 'BTC', 'Bitcoin Price', 'BTC price'],
     install_requires=[ 
         'requests',
