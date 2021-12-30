@@ -5,7 +5,7 @@ from pathlib import Path
 this_directory = Path(__file__).parent
 long_description = (this_directory / "README.md").read_text()
 
-VERSION = '0.6'
+VERSION = '0.7'
 DESCRIPTION = 'Get the current Bitcoin Price or Convert the fiat USD equivalente to BTC.'
 
 setup(
